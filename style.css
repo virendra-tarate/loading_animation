@@ -1,0 +1,244 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-content: center;
+    background-color:black;
+}
+
+#warn{
+    color:white;
+    font-size:39px;
+    display: none;
+}
+
+#main{
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    padding-top:40px;
+}
+
+/*ball-1*/
+#ball1{
+    height:100px;
+    width: 100px;
+    background-color:rgb(230, 0, 255);
+    border-radius: 50%;
+    box-shadow:0px 0px 7px white;
+    animation: ball1 5s linear 2s infinite alternate;
+    cursor: pointer;
+}
+
+/*ball-2*/
+#ball2{
+    height:100px;
+    width: 100px;
+    background-color:rgb(0, 255, 234);
+    border-radius: 50%;
+    box-shadow:0px 0px 7px white;
+    animation: ball2 5s linear 4s infinite alternate;
+    cursor: pointer;
+}
+
+/*ball-3*/
+#ball3{
+    height:100px;
+    width: 100px;
+    background-color:rgb(255, 0, 132);
+    border-radius: 50%;
+    box-shadow:0px 0px 7px white;
+    animation: ball3 5s linear 6s infinite alternate;
+    cursor: pointer;
+}
+
+/*ball-4*/
+#ball4{
+    height:100px;
+    width: 100px;
+    background-color:rgb(0, 255, 51);
+    border-radius: 50%;
+    box-shadow:0px 0px 7px white;
+    animation: ball4 5s linear 8s infinite alternate;
+    cursor: pointer;
+}
+
+/*ball1 animation*/
+
+@keyframes ball1{
+    0%{
+        position:relative;
+        top:10px;
+    }
+
+    25%{
+        position:relative;
+        top:20px;
+    }
+
+    50%{
+        position:relative;
+        top:40px;
+    }
+
+    75%{
+        position:relative;
+        top:80px;
+    }
+
+    100%{
+        position:relative;
+        top:160px;
+    }
+
+}
+
+/*ball2 animation*/
+
+@keyframes ball2{
+    0%{
+        position:relative;
+        top:10px;
+    }
+
+    25%{
+        position:relative;
+        top:20px;
+    }
+
+    50%{
+        position:relative;
+        top:40px;
+    }
+
+    75%{
+        position:relative;
+        top:80px;
+    }
+
+    100%{
+        position:relative;
+        top:160px;
+    }
+
+}
+
+/*ball3 animation*/
+
+@keyframes ball3{
+    0%{
+        position:relative;
+        top:10px;
+    }
+
+    25%{
+        position:relative;
+        top:20px;
+    }
+
+    50%{
+        position:relative;
+        top:40px;
+    }
+
+    75%{
+        position:relative;
+        top:80px;
+    }
+
+    100%{
+        position:relative;
+        top:160px;
+    }
+
+}
+
+/*ball4 animation*/
+
+@keyframes ball4{
+    0%{
+        position:relative;
+        top:10px;
+    }
+
+    25%{
+        position:relative;
+        top:20px;
+    }
+
+    50%{
+        position:relative;
+        top:40px;
+    }
+
+    75%{
+        position:relative;
+        top:80px;
+    }
+
+    100%{
+        position:relative;
+        top:160px;
+    }
+
+}
+
+#txt{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: whitesmoke;
+    background: transparent;
+    position: fixed;
+    top: 266px;
+    left:10px;
+    right:10px;
+    text-align: center;
+    font-size:60px;
+}
+
+/*adding media query for making responsive*/
+
+@media screen and (max-width:401px) {
+    #ball1 ,#ball2 ,#ball3 ,#ball4{
+        height:77px;
+        width:77px;
+    }
+
+    #txt{
+        font: size 50px;
+    }
+
+}
+
+@media screen and (max-width:311px) {
+    #ball1 ,#ball2 ,#ball3 ,#ball4{
+        height:60px;
+        width:60px;
+    }
+
+    #txt{
+        font: size 50px;
+    }
+
+}
+
+@media screen and (max-width:231px) {
+    #ball1 ,#ball2 ,#ball3 ,#ball4{
+        display:none;
+    }
+
+    #txt{
+        display:none;
+    }
+
+    #warn{
+        display:inline-block;
+        color: white;
+    }
+}
